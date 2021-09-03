@@ -1,0 +1,185 @@
+body{
+    background-color:whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styling the app background */
+
+#outer-div{
+    background: linear-gradient(to right,rgb(83, 6, 6),rgb(0, 0, 68));
+    padding:1%;
+    width:40%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Styling the heading */
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin:auto;
+    color: whitesmoke;
+    margin-bottom:20px;
+    padding-bottom: 10px;
+}
+
+/* Styling the inputs */
+
+input{
+    outline:none;
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+
+/* Styling the description div */
+
+#div1{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding:5px;
+    border-bottom: 2px solid firebrick;
+}
+#div1 span{
+    color:firebrick;
+    padding-left:10px;
+    width:90%;
+}
+#div1 input{
+    background-color: whitesmoke;
+    border:0px;
+    margin-top:-1px;
+    padding:10px;
+    width:90%;
+}
+
+/* Styling the category and date div */
+
+#div2{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+#category, #date{
+    color:firebrick;
+    display: inline-block;
+    padding:10px;
+    width:49%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+#date{
+    border-left: 2px solid firebrick;
+}
+select{
+    background-color: whitesmoke;
+    margin-top: 5px;
+    border:0px;
+    width:100%;
+    outline:none;
+    font-size: 15px;
+}
+#date input{
+    border: 0px;
+    margin-top: 5px;
+    width:100%;
+    font-size: 15px;
+}
+
+/* Styling the Add and Delete button */
+
+button{
+    height: 50px;
+    width: 170px;
+    font-size: 17px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+#buttons, #delete-btn{
+    text-align: center;
+}
+#add_btn{
+    background: linear-gradient(to right,rgb(26, 253, 26),rgb(3, 112, 3) 200%);
+    border: 0px;
+    cursor: pointer;
+}
+#add_btn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+#dlt_btn{
+    background: linear-gradient(to right,cyan,blue 200%);
+    border:0px;
+    cursor: pointer;
+}
+#dlt_btn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Styling the Added tasks list */
+
+#task_list{
+    background-color: rgb(190, 255, 215);
+    margin-bottom:5px;
+    height:70px;
+    padding:5px;
+    display: flex;
+    border-radius: 5px;
+}
+#task1{
+    display: inline-block;
+    height:70%;
+    width:80%;
+    padding:10px;
+}
+#task2{
+    display: inline-block;
+    height:90%;
+    width:100px;
+}
+#span1{
+    margin-top: 10px;
+}
+#span2 i{
+    margin: 10px;
+    margin-left:25px;
+}
+#span2{
+    font-size: 13px;
+    color: darkgreen;
+}
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+}
+.work{
+    background: linear-gradient(to right, purple,black 200%);
+    color:white;
+}
+.personal{
+    background: linear-gradient(to right, yellow,rgb(136, 255, 0) 200%);
+}
+.school{
+    background: linear-gradient(to right, rgb(0, 255, 55),rgb(0, 255, 170) 200%);
+}
+.cleaning{
+    background: linear-gradient(to right, rgb(0, 255, 213),rgb(69, 101, 243) 200%);
+}
+.other{
+    color: white;
+    background: linear-gradient(to right, rgb(252, 1, 118),rgb(163, 2, 64) 200%);
+}
+.taskType{
+    width:100px;
+    border:2px solid black;
+    margin-top: 10px;
+}
+#task_list:hover{
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+    background-color:rgb(96, 245, 220);
+}
+#check{
+    display: inline-block;
+}
